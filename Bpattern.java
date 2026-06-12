@@ -1,0 +1,17 @@
+//Patter for printing the pattern
+import java.util.*;
+public class Bpattern{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for (int i = n-1; i >=0; i--) {
+            for (int j = 1; j <= i; j++)
+                System.out.print("b");                         
+            for (int j = 2; j <= 2 * (n - i); j++)
+                System.out.print("*");
+            for (int j = 1; j <= i; j++)
+                System.out.print("b");
+        System.out.println();
+        }
+    }
+}
